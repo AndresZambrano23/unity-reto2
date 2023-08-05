@@ -11,6 +11,8 @@ public class PersonajeController : MonoBehaviour
     private Transform controladorSuelo;
     private Vector3 dimensionesCaja;
     public bool sePuedeMover = true;
+    private float velActual;
+    private float jumpActual;
 
     public Vector2 velocidadRebote;
 
@@ -55,8 +57,10 @@ public class PersonajeController : MonoBehaviour
             //Salto
             if (Input.GetKey(KeyCode.UpArrow) && enElsuelo)
             {
-                rb.AddForce(new Vector2(0f, fuerzaJump), ForceMode2D.Impulse);
+                //rb.AddForce(new Vector2(0f, fuerzaJump));
+                rb.velocity = new Vector2(rb.velocity.x, +fuerzaJump);
                 enElsuelo = false;
+                //AudioManager.Instance.PlaySFX("jump");
             }
 
         }
@@ -72,5 +76,31 @@ public class PersonajeController : MonoBehaviour
     public void Rebote(Vector2 puntoGolpe, float direccion)
     {
         rb.velocity = new Vector2(velocidadRebote.x * puntoGolpe.x * direccion, velocidadRebote.y);
+    }
+
+    public void superVelocidad(float velM, float tiempoPoder)
+    {
+        StartCoroutine(velocidad(velM, tiempoPoder));
+    }
+
+    public void superSalto(float fuerzaJ, float tiempoPoder)
+    {
+        StartCoroutine(salto(fuerzaJ, tiempoPoder));
+    }
+
+    private IEnumerator velocidad(float velM, float tiempoPoder)
+    {
+        velActual = velMovement;
+        velMovement = velM;
+        yield return new WaitForSeconds(tiempoPoder);
+        velMovement = velActual;
+    }
+
+    private IEnumerator salto(float fuerzaJ, float tiempoPoder)
+    {
+        jumpActual = fuerzaJump;
+        fuerzaJump = fuerzaJ;
+        yield return new WaitForSeconds(tiempoPoder);
+        fuerzaJump = jumpActual;
     }
 }
