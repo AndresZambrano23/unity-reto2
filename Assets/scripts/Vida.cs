@@ -25,14 +25,14 @@ public class Vida : MonoBehaviour
 
     public void TomarVida(float dano)
     {        
-        AudioManager.Instance.PlaySFX("hit");
+        //AudioManager.Instance.PlaySFX("hit");
         vida = vida - dano;        
         barraVida.CambiarVidaActual(vida);
         Debug.Log("vida: " + vida);
         if(vida <= 0){            
             gameOver.SetActive(true);
-            AudioManager.Instance.musicSource.Stop();
-            AudioManager.Instance.PlaySFX("gameover");
+            //AudioManager.Instance.musicSource.Stop();
+            //AudioManager.Instance.PlaySFX("gameover");
             Destroy(gameObject);
         }
     }
