@@ -24,4 +24,8 @@ public class Puntaje : MonoBehaviour
     {
         puntos += puntosEntrada;
     }
+
+    public float ObtenerPuntaje() {
+        return puntos;
+    }
 }

@@ -13,7 +13,7 @@ public class SumarPuntaje : MonoBehaviour
         {
             //Instantiate(efecto, transform.position, Quaternion.identity);
             puntaje.SumarPuntos(cantidadPuntos);
-            //AudioManager.Instance.PlaySFX("coin");
+            AudioManager.Instance.PlaySFX("coin");
             Destroy(gameObject);
         }
     }

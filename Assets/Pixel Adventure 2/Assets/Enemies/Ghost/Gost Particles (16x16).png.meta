@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,7 +148,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gost Particles (48x16)_0
+      name: Gost Particles (16x16)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a08a4242ceb1b4387ea00c0686b7cc
-      internalID: 7203001037595464775
+      spriteID: 075d3eac01f594938abd46705a5325e1
+      internalID: -412086963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gost Particles (48x16)_1
+      name: Gost Particles (16x16)_1
       rect:
         serializedVersion: 2
         x: 16
@@ -183,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b312f0a9ac05ce40be191acde502782
-      internalID: 5000928877878063455
+      spriteID: eccad9f71797a4c13a515870023d132a
+      internalID: -1682643912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gost Particles (48x16)_2
+      name: Gost Particles (16x16)_2
       rect:
         serializedVersion: 2
         x: 32
@@ -204,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 263265ec62f6ed149add24da15099d9d
-      internalID: -4129204854761752304
+      spriteID: 4997cb5e69793458e9f9bd6ddbdf1ade
+      internalID: -1347240103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gost Particles (48x16)_3
+      name: Gost Particles (16x16)_3
       rect:
         serializedVersion: 2
         x: 48
@@ -225,8 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40d50766c20d1e94cb9f64cd0f5811bc
-      internalID: -8580473854892813536
+      spriteID: 206bfc0291945426e926074f60568060
+      internalID: 1081240419
       vertices: []
       indices: 
       edges: []
@@ -242,10 +242,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gost Particles (48x16)_0: 7203001037595464775
-      Gost Particles (48x16)_1: 5000928877878063455
-      Gost Particles (48x16)_2: -4129204854761752304
-      Gost Particles (48x16)_3: -8580473854892813536
+      Gost Particles (16x16)_0: -412086963
+      Gost Particles (16x16)_1: -1682643912
+      Gost Particles (16x16)_2: -1347240103
+      Gost Particles (16x16)_3: 1081240419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

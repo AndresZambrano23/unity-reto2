@@ -60,7 +60,7 @@ public class PersonajeController : MonoBehaviour
                 //rb.AddForce(new Vector2(0f, fuerzaJump));
                 rb.velocity = new Vector2(rb.velocity.x, +fuerzaJump);
                 enElsuelo = false;
-                //AudioManager.Instance.PlaySFX("jump");
+                AudioManager.Instance.PlaySFX("jump");
             }
 
         }
