@@ -15,7 +15,7 @@ public class MuerteCaida2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -10)
+        if (transform.position.y < -18)
         {
             vida.TomarVida(vida.maximoVida);
         }
