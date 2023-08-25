@@ -13,6 +13,7 @@ public class PersonajeController : MonoBehaviour
     public bool sePuedeMover = true;
     private float velActual;
     private float jumpActual;
+    private SpriteRenderer spriteRenderer;
 
     public Vector2 velocidadRebote;
 
@@ -25,7 +26,7 @@ public class PersonajeController : MonoBehaviour
         sePuedeMover = true;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 
@@ -70,7 +71,8 @@ public class PersonajeController : MonoBehaviour
     private void Girar()
     {
         mirandoDerecha = !mirandoDerecha;
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+        //transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+        spriteRenderer.flipX = !spriteRenderer.flipX;
     }
 
     public void Rebote(Vector2 puntoGolpe, float direccion)
